@@ -1,9 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
-import React from "react";
-
-class App extends React.Component {
-  render() {
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import web3 from './web3';
+ 
+class App extends Component {
+  render(){
+    console.log(web3.version);
+    
     return (
       <div className="App">
         <header className="App-header">
@@ -22,6 +25,10 @@ class App extends React.Component {
         </header>
       </div>
     );
+ 
   }
+ 
+  
 }
+ 
 export default App;
